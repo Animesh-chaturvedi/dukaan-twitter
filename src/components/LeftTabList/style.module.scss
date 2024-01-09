@@ -1,0 +1,42 @@
+.ListItemCont {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  opacity: 0.8;
+  padding: 8px 16px;
+  flex: 1;
+  gap: 12px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  &:hover {
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.SelectedTab {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  opacity: 0.8;
+  padding: 8px 16px;
+  flex: 1;
+  gap: 12px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  svg {
+    height: 20px;
+    width: 20px;
+  }
+}

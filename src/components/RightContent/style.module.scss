@@ -1,0 +1,335 @@
+.RightCont {
+  flex: 1;
+  max-height: 100vh;
+  overflow: auto;
+  .headerCont {
+    display: flex;
+    gap: 16px;
+    padding: 12px 32px;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+    background: #fff;
+    // width: 100%;
+    .headerFirstCont {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      color: #1a181e;
+      .supportText {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        color: #4d4d4d;
+        cursor: pointer;
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+    .headSecondCont {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 16px;
+      border-radius: 6px;
+      background: #f2f2f2;
+      svg {
+        width: 16px;
+        height: 16px;
+        color: #808080;
+      }
+      .input {
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        background: #f2f2f2;
+        &::placeholder {
+          color: #808080;
+        }
+      }
+    }
+    .headThirdCont {
+      flex: 1;
+      display: flex;
+      gap: 12px;
+      justify-content: end;
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+  .bodyCont {
+    height: calc(100vh - 67px);
+    background: var(--Black-98, #fafafa);
+    .innerBodyCont {
+      padding: 32px;
+      .OverViewCont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        .OverviewText {
+          color: var(--Black-12, #1a181e);
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+        }
+        .dropdown {
+          overflow: hidden;
+          width: 137px; /* Adjust width as needed */
+          position: relative;
+          border-radius: 4px;
+          border: 1px solid var(--Black-85, #d9d9d9);
+          background: var(--Black-100, #fff);
+          .dropdownSelect {
+            border: none;
+            width: 100%;
+            padding: 6px 14px;
+            -webkit-appearance: none; /* Removes default styles for select in Chrome */
+            -moz-appearance: none; /* Removes default styles for select in Firefox */
+            appearance: none; /* Removes default styles for select */
+            background: url("../../icons/arrow.svg") no-repeat right #ffffff; /* Add your down arrow icon */
+            background-position-x: 90%; /* Adjust the position of the icon as needed */
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--Black-30, #4d4d4d);
+            cursor: pointer;
+          }
+        }
+      }
+      .cardCont {
+        display: flex;
+        gap: 20px;
+        .cardCover {
+          flex: 1;
+          border-radius: 8px;
+          background: var(--Black-100, #fff);
+          text-align: left;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          margin-bottom: 32px;
+          .cardText {
+            color: var(--Black-30, #4d4d4d);
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+          .cardNumber {
+            color: var(--Black-12, #1a181e);
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 38px;
+          }
+        }
+      }
+      .TractionDiv {
+        color: #1a181e;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .searchAndTable {
+        padding: 12px 12px 24px 12px;
+        background-color: #fff;
+
+        .SearchTableCont {
+          display: flex;
+          background-color: #fff;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 12px;
+          .searchBar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            border-radius: 4px;
+            background: #ffffff;
+            border: 1px solid #d9d9d9;
+            svg {
+              width: 14px;
+              height: 14px;
+              color: 999;
+            }
+            .input {
+              box-sizing: border-box;
+              border: none;
+              outline: none;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 22px;
+              background: #ffffff;
+              &::placeholder {
+                color: #808080;
+              }
+            }
+          }
+          .SortAndDown {
+            display: flex;
+            gap: 12px;
+            .SortCont {
+              display: flex;
+              padding: 6px 12px;
+              align-items: center;
+              gap: 6px;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px;
+              color: #4d4d4d;
+              border-radius: 4px;
+              border: 1px solid var(--Black-85, #d9d9d9);
+              background: var(--Black-100, #fff);
+              svg {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            .downloadIcon {
+              color: #4d4d4d;
+              border-radius: 4px;
+              border: 1px solid var(--Black-85, #d9d9d9);
+              background: var(--Black-100, #fff);
+              display: flex;
+              align-items: center;
+              padding: 8px;
+              svg {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+        .dataTable {
+          width: 100%;
+          border-collapse: collapse;
+          border-radius: 6px;
+        }
+        .dataTable td {
+          text-align: center;
+          padding: 14px 12px;
+          border-bottom: 1px solid #ddd;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          color: #4d4d4d;
+          &:first-child {
+            text-align: left;
+            color: #146eb4;
+          }
+          &:last-child {
+            text-align: right;
+          }
+        }
+
+        // .dataTable th {
+        //   background-color: #f8f8f8;
+        //   cursor: pointer;
+        //   text-align: center;
+        // }
+        // // .dataTable th,
+        // .dataTable th:first-child {
+        //   text-align: left;
+        // }
+        // // .dataTable th,
+        // .dataTable td:last-child {
+        //   text-align: right;
+        // }
+        .dataTable th {
+          padding: 14px 12px;
+          background-color: #f2f2f2;
+          cursor: pointer;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          color: #4d4d4d;
+          text-align: center;
+          border-bottom: none;
+          svg {
+            width: 12px;
+            height: 12px;
+          }
+          &:first-child {
+            text-align: left;
+            border-radius: 4px 0px 0px 4px;
+          }
+          &:last-child {
+            text-align: right;
+            border-radius: 0px 4px 4px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.pagination button {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.selected {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: #146eb4 !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white !important;
+}
+
+.pagination button[disabled] {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.buttonPress {
+  border-radius: 4px !important;
+  border: 1px solid #d9d9d9 !important;
+  background: #fff !important;
+}

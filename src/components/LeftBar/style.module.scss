@@ -1,0 +1,82 @@
+.LeftContainer {
+  width: 224px;
+  height: calc(100vh - 2rem);
+  background-color: #1e2640;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.LeftHeadingCont {
+  display: flex;
+  margin: 0.5px 8.5px 24px 8.5px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  gap: 12px;
+  .LeftUser {
+    flex: 1;
+    text-align: left;
+  }
+  img {
+    width: 39px;
+    height: 39px;
+    border-radius: 4px;
+  }
+  svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: 400;
+    color: var(--Black-100, #fff);
+    opacity: 0.8;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+.bottomContainer {
+  margin: 0px 8px;
+  padding: 6px 12px;
+  background: #353c53;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  border-radius: 4px;
+  .IconCont {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+    border-radius: 4px;
+    height: 24px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .BottomTextCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    .bottomText{
+        opacity: 0.8;
+    }
+    .bottomNumber {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      opacity: 1;
+    }
+  }
+}
